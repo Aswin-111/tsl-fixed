@@ -1,0 +1,706 @@
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+  
+
+.hero-main-container {
+  background-image: url("./images/step1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  /* overflow-y:hidden; */
+}
+
+.home-language-select-button {
+  position: absolute;
+  bottom: 30vh;
+  right: 8vw;
+  background-image: linear-gradient(to bottom, #081e59, #000000);
+  border: 1px solid white;
+  color: white;
+  border-radius: 8px;
+  height: 6vh;
+  width: 12vw;
+  text-align: center;
+}
+
+.home-language-select-button:hover {
+  background-image: linear-gradient(to bottom, #000000, #081e59);  
+  transition: .3s ease-in-out;
+  border: 1px solid #081e59;
+}
+
+.proceed-button{
+  position: absolute; 
+  bottom: 15vh;
+  right: 20vw;
+  background-image: linear-gradient(to bottom, #081e59, #000000);
+  border: 1px solid white;
+  color: white;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  height: 8vh;
+  width: 12vw;
+  text-align: center;
+}
+
+.proceed-button:hover {
+  background-image: linear-gradient(to bottom, #000000, #081e59);  
+  transition: .3s ease-in-out;
+  border: 1px solid #081e59;
+}
+
+
+
+/* Sliding Container Section */
+
+
+.parent-container {
+    /* background-image: url("./step1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    width: 100vh;
+    height: 100vh;
+    background: transparent;
+    background-color: transparent;
+    
+}
+
+.slide-column-img {
+   /* background: transparent; */
+   background-color: rgba(0,0,0,0.2);
+   height: 100%;
+}
+
+.slide-column-form-container {
+    background-image: url("./images/back.png");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    /* background-position-y: 10vh; */
+    text-align: center;
+    margin: auto;
+}
+
+.form-parent-container {
+    height: auto;
+}
+
+.audio-section {
+    background-color: #05616D;
+    height: 8vh;
+    width:100%;
+    
+}
+
+.audio-section > section {
+    background-color: #05616D;
+    color: white;
+}
+
+
+.reg-language-select-button {
+  /* height: 50%;
+  border-radius: 4px;
+  background-color: #05616D;
+  color: white;
+  border: none;
+  border: 2px solid white; */
+  height: 5vh;
+  border-radius: 5px;
+  background: none;
+  color: white;
+  border: 2px solid white;
+}
+
+.parent-heading {
+    color: #05616D;
+    font-size: 1.3rem;
+    margin: 2% auto 0;
+}
+
+.form-container-wrapper {
+    padding: 0 6%;
+}
+
+.form-input-container {
+    height: 7vh;
+    color: #05616D;
+}
+
+::placeholder{
+    color: #05616D;
+    font-size: 1rem;
+}
+
+.validate{
+  border:none;
+  border:2px solid #e74c3c !important;
+}
+input[type="text"],select{
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-left: 20px;
+    color: #05616d;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none !important;
+}
+.form-input-field {
+    border-style: none;
+    background-color: white;
+    color: #05616D;
+    border-radius: 4px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.50) !important;
+    /* box-shadow: 1px 7px 10px 2px rgba(0, 0, 0, 0.26); */
+}
+
+/* .form-input-field:focus {
+    border: 2px solid #05616D;
+} */
+/* dob input style override vue date picker package*/
+.dp__input_reg{
+  border:none;
+}
+.gender-radio-button {
+    size: 2vh;
+}
+
+.country-flag-image {
+  max-width: 6vh;
+}
+
+.country-code {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.phone-number {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.remarks-count {
+  color: #2f3542; 
+  margin-right: 14px;
+}
+
+.submit {
+    background-color: #05616D;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.submit:hover {
+    background-color: #034C56;
+}
+
+/* Footer Section */
+
+.footer-container-wrapper {
+    padding: 0 6%;
+    margin: 5% 0;
+}
+
+.footer .footer-sub-grp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.footer .footer-sub-grp .foot-head {
+    font-weight: 400;
+}
+  
+.footer .footer-sub-grp .footer-update {
+    font-weight: bold;
+}
+
+
+
+/* ---------------------------Overlay Effect Styles------------------ */
+
+
+/* .overlay-before-click {
+  position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 100%;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 1s ease;
+} */
+
+/* .overlay-after-click {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transition: 1s ease;
+} */
+
+/* .hero-main-container:hover .overlay-before-click {
+  width: 100%;
+  left: 0;
+} */
+
+
+
+
+/* -------------------Sliding Animation------------ */
+
+.login-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%; /* Adjust width as needed */
+  /* background-color: rgb(255, 255, 255); */
+  transition: transform 0.5s; /* Use a smooth transition effect */
+  transform: translateX(100%); /* Initially off-screen to the right */
+}
+
+.show-login {
+  transform: translateX(0); /* Move on-screen */
+}
+
+
+
+
+
+
+/* -----------------------Popup Styles----------------------- */
+
+  .blur {
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+  }
+  .hide {
+    display: none !important;
+  }
+
+
+
+  .popup-container-wrapper {
+    background-color: rgba(0,0,0, 0.7);
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;  
+    z-index: 10;
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.pop-up {
+  background-color: white;
+  border-radius: 17px;
+  height: 40%;
+  width: 40%;
+  text-align: center;
+}
+
+.pop-head {
+    background-color: rgba(219, 98, 98, 1);
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 2%;
+}
+
+.pop-content {
+   padding: 2% 3%;
+}
+
+.pop-content > p {
+    color: rgba(219, 98, 98, 1);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.pop-content > span {
+    font-size: 0.9rem;
+}
+
+.pop-btn {
+    padding: 2%;
+}
+
+.ok {
+  width: 7rem;
+  height: 2.5rem;
+  margin-bottom: 5%;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 1px 7px 10px 9px rgba(0, 0, 0, 0.26);
+}
+
+.ok:hover {
+    background-color: #e7e7e7;
+}
+
+.edit{
+  width: 7rem;
+  height: 2.5rem;
+  margin-bottom: 5%;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(219, 98, 98, 1);
+  box-shadow: 1px 7px 10px 9px rgba(0, 0, 0, 0.26);
+  color: white;
+}
+
+.edit:hover {
+    background-color: #f03655;
+}
+
+
+/* OTP Popup Styles */
+
+
+.otp-pop-head {
+    background-color: rgba(61, 129, 132, 1);;
+}
+
+.otp-pop-content {
+    color: rgba(61, 129, 132, 1);
+    padding: 3%;
+}
+
+
+.otp-input-field {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.otp-input-field:focus {
+    border: none;
+    border: 4px solid rgba(61, 129, 132, 1);
+}
+
+.otp-submit {
+    background-color: rgba(61, 129, 132, 1);
+}
+
+.otp-submit:hover {
+    background-color: #034C56;
+}
+ 
+
+
+.show-error {
+  display: block;
+  color: red;  
+  font-size:0.9rem;
+  text-align: left;
+}
+.hide-error {
+  display: none;
+}
+
+
+
+
+
+  
+ 
+  
+ /* -------------------------Media Queries for popups----------------------- */
+  
+ @media only screen and (max-width: 1400px) {
+
+  .pop-up {
+      height: 40%;
+      width: 50%;
+  }
+
+}
+
+@media only screen and (max-width: 1080px) {
+
+  .pop-up {
+      height: 40%;
+      width: 65%;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .pop-up {
+      height: 40%;
+      width: 80%;
+  }
+
+}
+
+@media only screen and (max-width: 568px) {
+
+  .pop-up {
+      height: 35%;
+      width: 95%;
+  }
+
+  .pop-head {
+      font-size: 1rem;
+  }
+
+}
+
+
+
+
+
+  
+
+
+  /* ----------------Media breakpoints for registration page--------------------- */
+
+
+/* ---------Tabs and mobiles----------- */
+
+@media only screen and (max-width: 1080px) {
+
+  .parent-container {
+      width: 100%;
+      height: 100vh;
+  }
+
+  .slide-column-img {
+      background-color: none;
+      background-image: url("./images/step1.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* object-fit: cover; */
+      width: 100vw;
+      height: 45vw;
+  }
+
+  .form-container-wrapper, .footer-container-wrapper {
+      padding: 0;
+  }
+
+  .footer-container-wrapper {
+      padding: 0;
+      margin: 6% 0;
+  }
+
+}
+
+/* Intermediate response for size between Laptop and Tablet */
+
+@media only screen and (max-width: 1080px) and (min-width: 768px) {
+  .slide-column-form-container {
+      padding: 2% 5%;
+      background-color: white;
+      text-align: center;
+      margin: auto;
+      width: 100vw;
+  }
+  
+}
+
+
+/* Mobile phones */
+
+@media only screen and (max-width: 600px) {
+
+
+  .home-language-select-button {
+    bottom: 30vh;
+    right: 25vw;
+    width: 50vw;
+  }
+
+  .proceed-button {
+    bottom: 15vh;
+    right: 25vw;
+    width: 50vw;
+  }
+
+  .parent-heading {
+      font-size: 1.5rem;
+  }
+
+  .footer-container-wrapper {
+      padding: 0;
+      margin: 10% 0;
+  }
+
+  .reg-language-select-button {
+    font-size: 0.8rem;
+  }
+    
+}
+
+  
+
+
+
+
+
+  
+ 
+  /* Registration success card */
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .registration-card {
+    width: 35vw;
+    height: 39vh;
+    background-color: white;
+    padding: 25px;
+    border-radius: 5px;
+    text-align: center;
+    border-radius: 25px;
+    background-image: linear-gradient(to bottom, #000000, #00069f, #000000);
+  }
+  
+  .card-div-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card-number {
+    color: white;
+    width: 40%;
+    text-align: left;
+  }
+  .card-number p {
+    margin: 0;
+    font-weight: 100;
+    font-size: 0.8rem;
+  }
+  .card-number h1 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  .card-logo-container {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .card-logo {
+    width: 40%;
+  }
+  
+  .card-div-middle {
+    margin: 5% auto;
+    color: white;
+    position: relative;
+  }
+  
+  .card-div-middle .chip {
+    position: absolute;
+    left: 0;
+    width: 12%;
+  }
+  
+  .card-div-middle h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 200;
+    color: #f4e893;
+  }
+  
+  .card-div-middle button {
+    width: 20%;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid #e7e7e7;
+    border-radius: 2px;
+  }
+  
+  .card-div-middle button:hover {
+    color: black;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid #e7e7e7;
+    transition: 0.5s;
+  }
+  
+  .card-div-bottom {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cardholder-group {
+    display: flex;
+    width: 70%;
+  }
+  .cardholder-name {
+    text-align: left;
+  }
+  .cardholder-name p {
+    margin: 0;
+    font-weight: 100;
+    font-size: 0.8rem;
+  }
+  .cardholder-name h2 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  .cardholder-img-container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 4%;
+    width: 16%;
+  }
+  
+  .cardholder-img {
+    width: 65%;
+  }
+  .validity p {
+    margin: 0;
+    font-weight: 100;
+    font-size: 0.8rem;
+  }
+  
